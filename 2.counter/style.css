@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#counter .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+#counter h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(165, 92, 165);
+    padding: 10px 20px;
+}
+#counter span{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#counter .container .buttons .btn{
+    font-size: 14px;
+    font-weight: 100;
+    padding: 10px 20px;
+    border: 0px;
+    color: white;
+    background-color: rgb(20, 80, 60);
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#counter .container .buttons .btn:hover{
+    background-color: rgb(43, 119, 94);
+}

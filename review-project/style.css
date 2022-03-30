@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#review-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:80px;
+}
+#review-card h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+#review-card .container{
+    width: 30vw;
+    border: 2px solid rgb(247, 243, 243);
+    padding: 30px;
+    text-align: center;
+}
+#review-card .container img{
+    width: 150px;
+    border-radius: 80px;
+    padding: 10px;
+
+}
+#review-card .container h3{
+    font-size: 18px;
+    color: rgb(15, 122, 87);
+    padding: 5px;
+}
+#review-card .container h4{
+    font-size: 16px;
+    color: rgb(2, 24, 16);
+    padding: 5px;
+}
+#review-card .container p{
+    font-size: 14px;
+}
