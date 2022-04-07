@@ -4,12 +4,16 @@
     box-sizing: border-box;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+body{
+    padding-bottom: 40px;
+}
 #review-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top:80px;
+    padding:40px;
+
 }
 #review-card h1{
     font-size: 30px;
@@ -21,11 +25,13 @@
     border: 2px solid rgb(247, 243, 243);
     padding: 30px;
     text-align: center;
+    box-shadow:  10px 10px 5px #aaaaaa;
 }
 #review-card .container img{
     width: 150px;
     border-radius: 80px;
     padding: 10px;
+    position: top 10px;
 
 }
 #review-card .container h3{
@@ -40,4 +46,32 @@
 }
 #review-card .container p{
     font-size: 14px;
+}
+
+#review-card .button-container{
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+}
+#review-card .button-container button {
+    font-size: 20px;
+    border: none;
+    padding: 8px 16px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    color: white;
+}
+#review-card .button-container button:hover{
+    background-color: rgb(37, 101, 219);
+}
+
+#review-card #surprise{
+    padding: 10px 20px;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+    background-color: white;
+}
+#review-card #surprise:hover{
+    background-color: cornflowerblue;
+    color: white;
 }

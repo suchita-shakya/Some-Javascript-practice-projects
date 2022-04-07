@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <titleTodo-List</title>
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li>TODOS</li>
+      <li>
+        <input type="text" id="search-text" placeholder="Search">
+      </li>
+    </ul>
+  </nav>
+    <div class="container">
+        <h3>Todo Lists</h3>
+        <div class="add-item">
+            <input type="text" placeholder="Input your todo" id="input-item">
+            <input type="hidden" id="edit-index">
+            <button id="add-btn">Add</button>
+            <button id="save-btn" style="display: none;">Save</button>
+            <button id="deleteall-btn" >Delete All</button>
+        </div>
+        <table style="width: 100%;">
+          <thead>
+            <tr>
+              <th>SN</th>
+              <th>Todos</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody class="todos">
+            <!--<tr >
+              <td>1</td>
+              <td>do</td>
+              <td>edit</td>
+              <td>delete</td>
+            </tr>-->
+          </tbody>
+        </table>
+        
+        
+        
+    </div>
+ 
+    <script src="app.js"></script>
+</body>
+</html>

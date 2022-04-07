@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            border: 2px solid rgb(231, 225, 225);
+            border-radius: 10px;
+            padding: 10px 40px;
+            width: 400px;
+            
+        }
+        .container h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            border-bottom: 2px solid grey;
+            color: rgb(106, 106, 155);
+            text-align: center;
+        }
+        .container input{
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+        .container ul{
+            padding: 0;
+        }
+        .container ul li{
+            list-style: none;
+            border-bottom: 2px solid rgb(98, 98, 182);
+            padding: 5px 0;
+        }
+        .container ul li h5{
+            font-size: 18px;
+            color: rgb(98, 98, 182);
+            border: 2px solid grey;
+            padding: 5px 10px;
+        }
+        .container ul li a{
+            text-decoration: none;
+            color: black;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>My Contact</h1>
+    <input type="text" id="filterInput" placeholder="Search names">
+    <ul id="names">
+        <li class="collection-name"><h5>A</h5></li>
+        <li class="collection-item"><a href="#">Ajay</a></li>
+        <li class="collection-item"><a href="#">Abay</a></li>
+        <li class="collection-item"><a href="#">Aawaj</a></li>
+        <li class="collection-item"><a href="#">Abishek</a></li>
+
+        <li class="collection-name"><h5>B</h5></li>
+        <li class="collection-item"><a href="#">Bijay</a></li>
+        <li class="collection-item"><a href="#">Bibek</a></li>
+        <li class="collection-item"><a href="#">Binita</a></li>
+        <li class="collection-item"><a href="#">Bobby</a></li>
+
+        <li class="collection-name"><h5>C</h5></li>
+        <li class="collection-item"><a href="#">Cane</a></li>
+        <li class="collection-item"><a href="#">Ctal</a></li>
+        <li class="collection-item"><a href="#">Cutu</a></li>
+        <li class="collection-item"><a href="#">Craneberry</a></li>
+    </ul>
+</div>
+    
+<script>
+    //get input element and add event listener
+    let filterInput = document.getElementById("filterInput");
+    filterInput.addEventListener("input", function(){
+        filterValue = filterInput.value.toUpperCase();
+        
+        //get ul
+       // let ul = document.getElementById('names');
+        //get li
+        let li = document.querySelectorAll('.collection-item');
+
+        //loop through li collection
+        for(let i=0;i<li.length;i++){
+            let a = li[i].getElementsByTagName('a')[0];
+            //if matched
+            if(a.innerHTML.toUpperCase().indexOf(filterValue)>-1){
+                li[i].style.display="";   
+            }
+            //if not matched
+            else{
+                li[i].style.display="none";
+            }
+        }
+    })
+
+</script>
+</body>
+</html>
